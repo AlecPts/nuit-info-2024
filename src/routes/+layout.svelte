@@ -1,11 +1,7 @@
 <script>
-	import Test from '$lib/Test.svelte';
-	import Cookie from '$lib/Cookie.svelte';
-import '../app.css';
-	let { children } = $props();
+    import "../app.css";
 </script>
 
-{@render children()}
-
-
-<Cookie />
+<main>
+    <slot />
+</main>
